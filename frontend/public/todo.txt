@@ -1,0 +1,7 @@
+What need to do?
+
+- Edit todo
+- Change theme color
+- add topics (done, time)
+- more information...
+- priority

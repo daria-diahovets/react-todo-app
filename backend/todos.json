@@ -1,0 +1,58 @@
+[
+  {
+    "id": "2lt0piu11dqm8r3w8v2",
+    "date": "20/03/2025, 07:35",
+    "title": "Water Flowers",
+    "description": "Water the garden and indoor plants",
+    "completed": false
+  },
+  {
+    "id": "2lt0piu11dqm8r3wt3o",
+    "date": "22/03/2025, 11:11",
+    "title": "Buy Groceries",
+    "description": "Milk, eggs, bread, and vegetables",
+    "completed": false
+  },
+  {
+    "id": "2lt0piu11dqm8r3x12l",
+    "date": "23/03/2025, 15:45",
+    "title": "Finish Project",
+    "description": "Complete the final report by Frdateay",
+    "completed": false
+  },
+  {
+    "id": "2lt0piu11dqm8r3xbxj",
+    "date": "25/03/2025, 17:00",
+    "title": "Call Mom",
+    "description": "Check in and see how she's doing",
+    "completed": false
+  },
+  {
+    "id": "2lt0piu11dqm8r3xgf5",
+    "date": "27/03/2025, 10:34",
+    "title": "Exercise",
+    "description": "Go for a 30-minute jog in the evening",
+    "completed": false
+  },
+  {
+    "id": "2lt0piubbgm8zy0zt3",
+    "date": "02/04/2025, 16:08",
+    "title": "Плотно посрать",
+    "description": "После вкусной еды, так и тянет к унитазу",
+    "completed": false
+  },
+  {
+    "id": "2lt0piubbgm90cfg7t",
+    "date": "02/04/2025, 22:52",
+    "title": "Та пошло оно всё в пизду!",
+    "description": "как же всё заебало, блять одно и то же",
+    "completed": false
+  },
+  {
+    "id": "2lt0piubbgm90cofjq",
+    "date": "02/04/2025, 22:59",
+    "title": "Выспаться наконец!!!",
+    "description": "Когда же я начну высыпаться, так же как и сахар?",
+    "completed": false
+  }
+]
