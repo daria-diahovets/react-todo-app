@@ -3,19 +3,7 @@ import { useState, useRef, useEffect } from "react";
 import Form from "./components/Form";
 import TodoList from "./components/TodoList";
 import { getTodos, addTodo, ITodo, deleteTodo } from "./api/api";
-
-// export type TList = {
-//   title: string;
-//   descr: string;
-// };
-
-// const DUMMY_TODOLIST: TList[] = [
-//   { title: "Water Flowers", descr: "Water the garden and indoor plants" },
-//   { title: "Buy Groceries", descr: "Milk, eggs, bread, and vegetables" },
-//   { title: "Finish Project", descr: "Complete the final report by Friday" },
-//   { title: "Call Mom", descr: "Check in and see how she's doing" },
-//   { title: "Exercise", descr: "Go for a 30-minute jog in the evening" },
-// ];
+import MenuControls from "./components/MenuControls";
 
 function App() {
   const [data, setData] = useState<ITodo[]>([]);
@@ -23,8 +11,12 @@ function App() {
   const descrRef = useRef<HTMLInputElement | null>(null);
 
   useEffect(() => {
-    getTodos().then((data) => setData(data as ITodo[]));
-  }, [data]);
+    fetchAllTodo();
+  }, []);
+
+  async function fetchAllTodo() {
+    await getTodos().then((data) => setData(data as ITodo[]));
+  }
 
   function hadnleSubmit(event: React.FormEvent<HTMLFormElement>): void {
     event.preventDefault();
@@ -41,28 +33,38 @@ function App() {
 
     titleRef.current.value = "";
     descrRef.current.value = "";
+    fetchAllTodo();
   }
+  console.log("App render");
 
-  function handleDeleteElement(id: string) {
-    deleteTodo(id);
+  async function handleDeleteElement(id: string) {
+    await deleteTodo(id);
+    fetchAllTodo();
   }
 
   function handleUpdateElement(updateTodo: ITodo) {
     setData((prev) =>
       prev.map((todo) => (todo.id === updateTodo.id ? updateTodo : todo)),
     );
+    fetchAllTodo();
   }
 
   return (
-    <>
+    <div className="container">
+      <MenuControls />
       <h1>✨ ToDo List App ✨</h1>
       <Form
         handleSubmit={hadnleSubmit}
         titleRef={titleRef}
         descrRef={descrRef}
       />
-      <TodoList todoList={data} onClose={handleDeleteElement} onUpdate={handleUpdateElement}/>
-    </>
+      <TodoList
+        todoList={data}
+        onClose={handleDeleteElement}
+        onUpdate={handleUpdateElement}
+      />
+      <div id="copyright">@dczoidberg</div>
+    </div>
   );
 }
 

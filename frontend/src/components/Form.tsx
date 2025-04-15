@@ -13,7 +13,7 @@ export default function Form({ handleSubmit, titleRef, descrRef }: IForm) {
         name="description"
         placeholder="DESCRIPTION"
         ref={descrRef}
-        maxLength={150}
+        maxLength={50}
       />
       <button>Create</button>
     </form>
