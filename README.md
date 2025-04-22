@@ -4,7 +4,7 @@ Welcome to the **Advanced ToDo App**! This is a modern, smooth, and highly inter
 
 ---
 
-![Screenshot]("https://raw.githubusercontent.com/daria-diahovets/react-todo-app/master/screenshot.png")
+![Screenshot](https://raw.githubusercontent.com/daria-diahovets/react-todo-app/master/screenshot.png)
 
 ---
 
