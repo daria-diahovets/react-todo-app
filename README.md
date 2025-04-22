@@ -1,4 +1,4 @@
-# ✨ Advanced ToDo App
+# ✨ ToDo List App ✨
 
 Welcome to the **Advanced ToDo App**! This is a modern, smooth, and highly interactive todo list built with React + TypeScript + Redux Toolkit.
 
@@ -42,11 +42,11 @@ Welcome to the **Advanced ToDo App**! This is a modern, smooth, and highly inter
 ### TodoState
 
 ```typescript
-interface TodoState {
+interface ITodoState {
   todos: ITodo[];
   filter: "all" | "completed" | "active";
   selectedDate: string | null;
-  status: "idle" | "loading" | "succeeded" | "failed";
+  loading: boolean;
   error: string | null;
 }
 ```
