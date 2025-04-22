@@ -4,7 +4,7 @@ Welcome to the **Advanced ToDo App**! This is a modern, smooth, and highly inter
 
 ---
 
-![Screenshot]("link")
+![Screenshot]("https://raw.githubusercontent.com/daria-diahovets/react-todo-app/refs/heads/master/screenshot.png")
 
 ---
 
@@ -30,7 +30,7 @@ Welcome to the **Advanced ToDo App**! This is a modern, smooth, and highly inter
 
 ## 📉 Technologies
 
-- **React 18** with TypeScript
+- **React 19** with TypeScript
 - **Redux Toolkit** for state management
 - **localStorage** for theme persistence
 - **Simple file-based fake API** for backend simulation (CRUD operations)
@@ -103,4 +103,5 @@ node server.js
 ## 🎉 Join my Telegram Channel!
 
 [Join Telegram](https://t.me/drzoidberg_portfolio)
+
 Enjoy and happy coding! 🚀
