@@ -32,20 +32,20 @@
     "date": "27/03/2025, 10:34",
     "title": "Exercise",
     "description": "Go for a 30-minute jog in the evening",
-    "completed": false
+    "completed": true
   },
   {
     "id": "2lt0piu209rm92gr98t",
     "date": "04/04/2025, 10:28",
     "title": "Learn German",
     "description": "Do 5 exercise in Student Book",
-    "completed": false
+    "completed": true
   },
   {
     "id": "3t5czpr4m97h6wiz",
     "date": "07/04/2025, 22:39",
     "title": "Table Tennis",
     "description": "Practise in serves for better result",
-    "completed": false
+    "completed": true
   }
 ]

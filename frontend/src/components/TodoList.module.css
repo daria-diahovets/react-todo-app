@@ -1,0 +1,112 @@
+.list {
+  width: 450px;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: var(--color3);
+  list-style-type: none;
+  margin-bottom: 55px;
+}
+.list li {
+  position: relative;
+  background-color: var(--color1);
+  padding: 15px;
+  margin: 5px 0;
+  border-radius: 12px;
+}
+.list li h3 {
+  font-size: 1.5rem;
+}
+.list li p {
+  font-size: 1rem;
+  font-weight: normal;
+  filter: brightness(85%);
+}
+.list li span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  transform-origin: center;
+  transition: all 0.3s;
+  cursor: pointer;
+  user-select: none;
+}
+.list li {
+  display: flex;
+  align-items: center;
+}
+.list li div {
+  padding-left: 15px;
+}
+.list li input {
+  width: 260px;
+  height: 25px;
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color5);
+  background-color: transparent;
+  border: 1px solid var(--color5);
+  border-radius: 2px;
+  outline: none;
+  margin: 5px 0;
+  padding: 0 5px;
+}
+.list li input[type="checkbox"] {
+  display: none;
+  width: 15px;
+  height: 15px;
+  margin: 0;
+}
+.list li label {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--color5);
+  border-radius: 3px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.list li label span {
+  display: none;
+  position: absolute;
+  font-weight: 200;
+  font-size: 18px;
+  top: 9px;
+  right: 2px;
+}
+.list li label input[type="checkbox"]:checked + span {
+  display: block;
+}
+.list li label:active {
+  scale: 0.9;
+}
+ul li span:active {
+  scale: 0.9;
+}
+
+#message {
+  text-align: center;
+}
+
+#loading p {
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .list li label:hover {
+    scale: 1.1;
+  }
+  ul li span:hover {
+    scale: 1.1;
+  }
+}

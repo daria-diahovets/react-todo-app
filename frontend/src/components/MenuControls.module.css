@@ -1,0 +1,104 @@
+#menu-controls {
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 10;
+}
+#menu-controls button {
+  background-color: var(--color1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+@media (hover: hover) and (pointer: fine) {
+  #menu-controls button:hover {
+    filter: brightness(85%);
+  }
+}
+
+#menu-controls button:active {
+  scale: 0.95;
+}
+#menu-controls svg {
+  color: var(--color5);
+}
+
+#theme-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s;
+  clip-path: inset(-100vw -100vw -100vw 0px);
+}
+#theme-btn.active .themes {
+  left: 60px;
+  grid-template-columns: repeat(5, 30px);
+  clip-path: inset(-100vw -100vw -100vw -50px);
+}
+#theme-btn button {
+  position: relative;
+  z-index: 10;
+}
+.themes {
+  clip-path: inset(-100vw -100vw -100vw 35px);
+  position: absolute;
+  left: -30px;
+  display: grid;
+  grid-template-rows: 30px;
+  grid-template-columns: repeat(5, 0px);
+  gap: 10px;
+  transition: all 0.3s;
+}
+.themes span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: transparent;
+  font-size: 1.5rem;
+  font-weight: 100;
+  user-select: none;
+}
+.themes span.active {
+  color: var(--color5);
+}
+.themes span:hover {
+  transform: translateY(-5px);
+}
+.themes span:active {
+  transform: translateY(5px);
+}
+.themes span:nth-child(1) {
+  background: linear-gradient(45deg, #f08080 0%, #b85d5d 100%);
+  border: 1px solid #ffdab9;
+}
+.themes span:nth-child(2) {
+  background: linear-gradient(45deg, #a786db 0%, #996fd6 100%);
+  border: 1px solid #d0c9ea;
+}
+.themes span:nth-child(3) {
+  background: linear-gradient(45deg, #88d498 0%, #1a936f 100%);
+  border: 1px solid #fcf4e3;
+}
+.themes span:nth-child(4) {
+  background: linear-gradient(45deg, #61a5c2 0%, #014f86 100%);
+  border: 1px solid #cdecf6;
+}
+.themes span:nth-child(5) {
+  background: linear-gradient(45deg, #ffa6c1 0%, #ff87ab 100%);
+  border: 1px solid #ffc4d6;
+}

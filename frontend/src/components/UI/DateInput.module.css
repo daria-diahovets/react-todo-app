@@ -1,0 +1,143 @@
+.wrapper {
+  position: relative;
+}
+.input {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.input input {
+  position: relative;
+  color: var(--color5);
+  background-color: var(--color1);
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  width: 125px;
+  height: 45px;
+  padding: 0 15px 0 40px;
+}
+@media (hover: hover) and (pointer: fine) {
+  .input:hover input {
+    cursor: pointer;
+    filter: brightness(85%);
+  }
+}
+.input:active {
+  scale: 0.95;
+}
+.input input::placeholder {
+  color: var(--color5);
+  text-transform: uppercase;
+}
+.input svg {
+  position: absolute;
+  z-index: 10;
+  width: 15px;
+  height: 17px;
+  top: 48%;
+  left: 15px;
+  transform: translateY(-50%);
+}
+
+.datepicker {
+  position: absolute;
+  top: calc(100% + 5px);
+  background-color: var(--color5);
+  border-radius: 10px;
+  padding: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+  z-index: 10;
+}
+.datepicker.visible {
+  visibility: visible;
+  opacity: 1;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+.header .month-input,
+.header .year-input {
+  background-color: var(--color5);
+  border: 1px solid var(--color1);
+  border-radius: 5px;
+  text-align: center;
+  padding: 0 5px;
+  outline: none;
+  color: var(--color1);
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.header .month-input {
+  width: 90px;
+}
+.year-input::placeholder {
+  color: var(--color1);
+}
+.header button {
+  height: 25px;
+  padding: 0 5px;
+  background-color: var(--color1);
+  color: var(--color5);
+  font-size: 12px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.days,
+.dates {
+  display: grid;
+  grid-template-columns: repeat(7, 27px);
+  gap: 5px;
+}
+.days {
+  color: var(--color1);
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.dates button {
+  aspect-ratio: 1;
+  cursor: pointer;
+  background-color: var(--color1);
+  color: var(--color5);
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.3s;
+}
+.dates button:disabled {
+  scale: unset;
+  cursor: unset;
+  filter: brightness(50%);
+}
+.dates .selected {
+  background-color: var(--color2);
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+  margin-top: 5px;
+}
+.cancel,
+.apply {
+  min-width: 50px;
+  height: 25px;
+  padding: 0 10px;
+  cursor: pointer;
+  background-color: var(--color1);
+  color: var(--color5);
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.3s;
+}
