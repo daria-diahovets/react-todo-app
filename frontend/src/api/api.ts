@@ -1,4 +1,4 @@
-const API_URL = import.meta.env.VITE_API_URL;
+const API_URL = `${import.meta.env.VITE_API_URL}/todos`;
 
 export interface ITodo {
   id: string;
@@ -22,7 +22,7 @@ const request = async <T>(
       body: body ? JSON.stringify(body) : undefined,
     };
 
-    const response = await fetch(`${url}/todos`, options);
+    const response = await fetch(url, options);
     if (!response.ok) throw new Error(`${response.status}`);
 
     return (await response.json()) as T;
