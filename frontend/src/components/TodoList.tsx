@@ -31,7 +31,7 @@ export default function TodoList() {
           <p>{error}</p>
         </li>
       )}
-      {todos.length === 0 && (
+      {todos.length === 0 && !error && !loading && (
         <li>
           <p id="message">There are not todo yet...</p>
         </li>

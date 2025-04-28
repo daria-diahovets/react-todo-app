@@ -141,3 +141,24 @@
   outline: none;
   transition: all 0.3s;
 }
+
+@media (max-width: 768px) {
+  .datepicker {
+    right: -10px;
+  }
+}
+
+@media (max-width: 615px) {
+  .input input {
+    width: 19vw;
+    height: 7.4vw;
+    font-size: 1.9vw;
+    border-radius: 1.7vw;
+    padding: 0 2.5vw 0 6.6vw;
+  }
+  .input svg {
+    width: 2.8vw;
+    height: 2.8vw;
+    left: 2.5vw;
+  }
+}

@@ -1,5 +1,5 @@
 .form {
-  width: 450px;
+  width: var(--width);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,4 +39,22 @@
 }
 .form button:active {
   scale: 0.95;
+}
+
+@media (max-width: 615px) {
+  .form {
+    gap: 2.6vw;
+    padding: 5.1vw;
+    border-radius: 3.4vw;
+  }
+  .form input,
+  .form button {
+    width: 100%;
+    height: 7.7vw;
+    border-radius: 2.1vw;
+    font-size: 2.4vw;
+  }
+  .form input {
+    padding: 1vw 2.6vw;
+  }
 }

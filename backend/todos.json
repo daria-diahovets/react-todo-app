@@ -11,7 +11,7 @@
     "date": "22/03/2025, 11:11",
     "title": "Buy Groceries",
     "description": "Milk, eggs, bread, and vegetables",
-    "completed": false
+    "completed": true
   },
   {
     "id": "2lt0piu11dqm8r3x12l",
@@ -25,14 +25,14 @@
     "date": "25/03/2025, 17:00",
     "title": "Call Mom",
     "description": "Check in and see how she's doing",
-    "completed": false
+    "completed": true
   },
   {
     "id": "2lt0piu11dqm8r3xgf5",
     "date": "27/03/2025, 10:34",
     "title": "Exercise",
     "description": "Go for a 30-minute jog in the evening",
-    "completed": true
+    "completed": false
   },
   {
     "id": "2lt0piu209rm92gr98t",
@@ -46,6 +46,13 @@
     "date": "07/04/2025, 22:39",
     "title": "Table Tennis",
     "description": "Practise in serves for better result",
-    "completed": true
+    "completed": false
+  },
+  {
+    "id": "3t5cz1p6zm9swodte",
+    "date": "22/04/2025, 22:36",
+    "title": "Do Exercise",
+    "description": "Exercise 3a p 32, Exercise 1b,c p 52",
+    "completed": false
   }
 ]

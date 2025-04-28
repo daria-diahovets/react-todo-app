@@ -76,8 +76,10 @@
 .themes span.active {
   color: var(--color5);
 }
-.themes span:hover {
-  transform: translateY(-5px);
+@media (hover: hover) and (pointer: fine) {
+  .themes span:hover {
+    transform: translateY(-5px);
+  }
 }
 .themes span:active {
   transform: translateY(5px);
@@ -101,4 +103,44 @@
 .themes span:nth-child(5) {
   background: linear-gradient(45deg, #ffa6c1 0%, #ff87ab 100%);
   border: 1px solid #ffc4d6;
+}
+
+@media (max-width: 768px) {
+  #menu-controls {
+    top: 15px;
+    left: 15px;
+  }
+}
+
+@media (max-width: 615px) {
+  #menu-controls {
+    top: 2.5vw;
+    left: 2.5vw;
+    gap: 2.5vw;
+  }
+  #menu-controls button {
+    width: 8.3vw;
+    height: 8.3vw;
+    border-radius: 1.7vw;
+  }
+  #menu-controls button svg {
+    width: 5vw;
+    height: 5vw;
+  }
+  #theme-btn.active .themes {
+    left: 9.9vw;
+    grid-template-columns: repeat(5, 5vw);
+    clip-path: inset(-100vw -100vw -100vw -8.2vw);
+  }
+  .themes {
+    clip-path: inset(-100vw -100vw -100vw 35px);
+    left: -5vw;
+    grid-template-rows: 5vw;
+    gap: 1.7vw;
+  }
+  .themes span {
+    width: 5vw;
+    height: 5vw;
+    font-size: 3.1vw;
+  }
 }

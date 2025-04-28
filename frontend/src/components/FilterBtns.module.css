@@ -47,8 +47,8 @@
   opacity: 0;
   position: absolute;
   right: -55px;
-  width: 45px;
   height: 45px;
+  aspect-ratio: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,4 +58,43 @@
 #reset.visible {
   visibility: visible;
   opacity: 1;
+}
+
+@media (max-width: 615px) {
+  .btns {
+    margin: 2.5vw 0;
+    gap: 1.7vw;
+  }
+  .btns button svg {
+    width: 3.3vw;
+    height: 3.3vw;
+  }
+  #reset svg {
+    width: 4.1vw;
+    height: 4.1vw;
+  }
+  #done,
+  #active,
+  #reset {
+    height: 7.4vw;
+    border-radius: 1.7vw;
+    gap: 1.7vw;
+  }
+
+  #done,
+  #active {
+    font-size: 2.1vw;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+  }
+  #done {
+    width: 19vw;
+  }
+
+  #active {
+    width: 28vw;
+  }
+  #reset {
+    right: -9vw;
+  }
 }

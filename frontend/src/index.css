@@ -1,3 +1,6 @@
+:root {
+  --width: 450px;
+}
 .peach-theme {
   --color1: #6e3f3f;
   --color2: #f08080;
@@ -60,7 +63,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px 20px 25px 20px;
+  padding: 50px 40px 25px 40px;
   width: 100vw;
   min-height: 100vh;
 }
@@ -74,9 +77,37 @@ h1 {
 #copyright {
   margin-top: auto;
   text-align: center;
-  color: var(--color1);
   background-color: var(--color2);
   transition: unset;
   font-size: 1.5rem;
   font-weight: 600;
+}
+#copyright a {
+  text-decoration: none;
+  color: var(--color1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  #copyright a:hover {
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 60px 40px 25px 40px;
+  }
+}
+
+@media (max-width: 615px) {
+  :root {
+    --width: 85%;
+  }
+  .wrapper {
+    padding: 8.2vw 6.6vw 4.1vw 6.6vw;
+  }
+  h1 {
+    font-size: 6vw;
+    margin-bottom: 2.5vw;
+  }
 }

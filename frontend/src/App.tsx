@@ -16,7 +16,7 @@ function App() {
       <Form />
       <FilterBtns />
       <TodoList />
-      <div id="copyright">@dczoidberg</div>
+      <div id="copyright"><a target="_blank" href="https://t.me/drzoidberg_portfolio">@dczoidberg</a></div>
     </div>
   );
 }

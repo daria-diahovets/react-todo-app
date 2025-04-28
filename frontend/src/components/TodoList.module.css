@@ -1,5 +1,5 @@
 .list {
-  width: 450px;
+  width: var(--width);
   padding: 30px;
   border-radius: 20px;
   background-color: var(--color3);
@@ -108,5 +108,62 @@ ul li span:active {
   }
   ul li span:hover {
     scale: 1.1;
+  }
+}
+
+@media (max-width: 615px) {
+  .list {
+    padding: 5vw;
+    border-radius: 3.4vw;
+    margin-bottom: 9vw;
+  }
+  .list li {
+    padding: 2.5vw;
+    margin: 0.9vw 0;
+    border-radius: 2vw;
+  }
+  .list li h3 {
+    font-size: 2.95vw;
+  }
+  .list li p {
+    font-size: 2vw;
+  }
+  .list li span {
+    font-size: 2.95vw;
+  }
+  .list li div {
+    padding-left: 2.5vw;
+  }
+  .list li input {
+    width: 40vw;
+    height: 4.1vw;
+    border-radius: 0.4vw;
+    margin: 0.9vw 0;
+    padding: 0 0.9vw;
+  }
+  .list li input[type="checkbox"] {
+    width: 2.5vw;
+    height: 2.5vw;
+  }
+  .list li label {
+    width: 3.3vw;
+    height: 3.3vw;
+    border-radius: 0.6vw;
+  }
+  .list li label span {
+    font-size: 3vw;
+    top: 1.5vw;
+    right: 0.4vw;
+  }
+}
+
+@media(max-width: 480px) {
+  .list li input {
+    width: 37vw;
+  }
+}
+@media(max-width: 380px) {
+  .list li input {
+    width: 33vw;
   }
 }
